@@ -1,0 +1,29 @@
+libbasiccard
+Version 0.2.5
+Copyright (C) 2004-2009 CHZ-Soft, Christian Zietz, <czietz@gmx.net>
+
+
+License
+
+When referring to source files, this license only applies to source
+files which are copyrighted by Christian Zietz. Some files (e.g. in the
+include and the third-party folder) have different copyright owners and
+may have different license terms. Nevertheless care has been taken that
+the whole library in compiled (binary) form can be used according to
+this license.
+
+
+Copyright (C) 2004-2009 CHZ-Soft, Christian Zietz
+
+You have a royalty-free right to use, modify, reproduce and distribute
+the source and binary files covered by the license or any modified
+version of these files or any derivative work in any way you find
+useful, provided that:
+
+- You agree that CHZ-Soft has no warranty, obligations or liability for
+  any of these files.
+- When distributing in source form: The respective copyright and license
+  notices in the source files remain intact.
+- When distributing in binary form: You include the following copyright
+  notice in the program or documentation:
+  Portions Copyright (C) 2004-2009 CHZ-Soft, Christian Zietz

@@ -1,0 +1,11 @@
+#include <windows.h>
+
+101 DIALOG 0, 0, 302, 80
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION 
+CAPTION "Select smartcard reader"
+FONT 8, "MS Sans Serif"
+{
+   DEFPUSHBUTTON "&OK",  1, 245, 7, 50, 14 
+   PUSHBUTTON "&Cancel", 2, 245, 24, 50, 14 
+   LISTBOX 1000, 7, 7, 230, 66, LBS_SORT | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP 
+}

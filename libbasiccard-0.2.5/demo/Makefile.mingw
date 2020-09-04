@@ -1,0 +1,21 @@
+CC = gcc
+CFLAGS += -I../include 
+
+demos: bcsetreader calcdemo
+
+bcsetreader: bcsetreader.o
+	$(CC) $(CFLAGS) -o $@ $^ ../libbasiccard-gcc.a
+
+calcdemo: calcdemo.o
+	$(CC) $(CFLAGS) -o $@ $^ ../libbasiccard-gcc.a
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+ifndef USE_UNIXTOOLS
+clean:
+	-del *.o *.exe
+else
+clean:
+	-rm *.o *.exe
+endif

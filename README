@@ -1,0 +1,5 @@
+These are libbasiccard and libbcrypto, libraries to communicate with 
+BasicCard smart cards.
+
+See the libbasiccard-x.x.x/docs subdirectory for documentation.
+
