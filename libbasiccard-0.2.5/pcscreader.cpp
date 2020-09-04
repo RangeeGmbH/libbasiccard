@@ -1,7 +1,7 @@
 /***************************************************************************
                           pcscreader.cpp  -  description
                              -------------------
-    begin                : Fr Mär 26 2004
+    begin                : Fr Mï¿½r 26 2004
     copyright            : (C) 2004 by Christian Zietz
     email                : czietz@gmx.net
  ***************************************************************************/
@@ -38,7 +38,7 @@ char * PCSCReader::getName() {
 ZCCRIRET PCSCReader::waitCard(LONG timeout) {
 /* now including fix for nasty bug using SCR reader under Windows */
   ZCCRIRET rv;
-  SCARD_READERSTATE_A readerstate[1];
+  SCARD_READERSTATE readerstate[1];
 
   if (timeout==0)
     timeout=1; // 0 is none for CRI but possibly infinite for PC/SC
