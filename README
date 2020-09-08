@@ -1,3 +1,6 @@
+Fork of libbasiccard from https://www.chzsoft.de/site/software/libbasiccard/ with some bugfixes.
+Thanks to Christian Zietz for allowing us to publish this version.
+
 These are libbasiccard and libbcrypto, libraries to communicate with 
 BasicCard smart cards.
 
