@@ -224,7 +224,7 @@ bool DESAESCrypt::decryptResponse(ResponseAPDU *r) {
       return false;
     }
     crcverify = CRC32(cryptBuf, lendata);
-    crc = (cryptBuf[crcpos]<<24)+(cryptBuf[crcpos+1]<<16)+(cryptBuf[crcpos+2]<<8)+(cryptBuf[crcpos+3]<<0);
+    crc = ((unsigned long)cryptBuf[crcpos]<<24)+((unsigned long)cryptBuf[crcpos+1]<<16)+((unsigned long)cryptBuf[crcpos+2]<<8)+((unsigned long)cryptBuf[crcpos+3]<<0);
 
     r->setData(cryptBuf, lendata-2);
     delete []cryptBuf;
