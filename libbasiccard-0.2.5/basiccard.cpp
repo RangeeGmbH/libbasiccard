@@ -57,9 +57,11 @@ ZCCRIRET BasicCard::startEncryption(BYTE algo, BYTE key, WORD keyCID){
 
   i = myrandom();
   memcpy(RA, &i, sizeof(i));
-  i = myrandom();
-  memcpy(RA+4, &i, sizeof(i));
-  
+  if (sizeof(i) == 4) {
+    i = myrandom();
+    memcpy(RA+4, &i, sizeof(i));
+  }
+
   if (keyCID != 0xffff) { // MultiApplication Card
    c->setP1(keyCID >> 8);
    c->setP2(keyCID & 0xff);
